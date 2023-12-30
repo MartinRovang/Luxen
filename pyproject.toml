@@ -1,0 +1,19 @@
+[project]
+name = "Luxen"
+version = "0.1.0"
+description = "Luxen - Financial analysis and economics tool."
+authors = [
+    {name = "Martin Røvang", email = "martinrovang@gmail.com"},
+]
+dependencies = [
+    "pandas>=2.1.4",
+    "pandas-datareader>=0.10.0",
+    "loguru>=0.7.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
