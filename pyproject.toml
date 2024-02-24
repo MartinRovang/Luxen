@@ -9,8 +9,13 @@ dependencies = [
     "pandas>=2.1.4",
     "pandas-datareader>=0.10.0",
     "loguru>=0.7.2",
-    "PyPortfolioOpt>=1.5.2",
     "yfinance>=0.2.33",
+    "matplotlib>=3.8.3",
+    "PyPortfolioOpt>=1.5.2",
+    "scikit-learn>=1.4.1.post1",
+    "seaborn>=0.13.2",
+    "mplcyberpunk>=0.7.1",
+    "setuptools>=69.1.1",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
