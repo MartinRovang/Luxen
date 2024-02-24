@@ -177,6 +177,6 @@ if __name__ == "__main__":
 
             # save meta data as text file
             with open(f"./examples/weighted_portofolio_{sharpe_best}.txt", "w") as f:
-                f.write(f'Best portofolio:\n{best_portofolio_weights}')
+                f.write(f'Best portofolio:\n{best_portofolio_weights}\n')
                 f.write(f'Annual return:\n {annual_return_best:.2%}, Annual volatility: {annual_volatility_best:.2%}, Sharpe Ratio: {sharpe_best:.2f}\n')
-                f.write(f'Number of stocks to buy:\n{num_to_buy}')
+                f.write(f'\nNumber of stocks to buy:\n{num_to_buy}')
