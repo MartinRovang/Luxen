@@ -283,7 +283,7 @@ if __name__ == "__main__":
         cash = 50000
         N = 10
         buy_date = pd.to_datetime('2020-01-01')
-        sample_for_real_portofolio : bool = False
+        sample_for_real_portofolio: bool = False
 
         start_date = "2016-01-01"
         end_date = "2024-01-25"
@@ -344,7 +344,7 @@ if __name__ == "__main__":
         num_of_fail_and_success = defaultdict(int)
         for i in range(0, 50000):
             current_portofolio = all_stock.sample(n=N, replace=False, axis=1)
-            current_portofolio_full = current_portofolio
+            current_portofolio_full = current_portofolio.dropna(axis=1, how="all")
             if not sample_for_real_portofolio:
                 current_portofolio = current_portofolio.loc[:buy_date]
             else:
@@ -360,15 +360,19 @@ if __name__ == "__main__":
                 # remove the tickers from all_stock
                 continue
 
-            mu = expected_returns.mean_historical_return(current_portofolio)
-            S = risk_models.risk_matrix(prices=current_portofolio, method="ledoit_wolf")
-            ef = EfficientFrontier(mu, S, weight_bounds=[0.05, 1])
-            ef.add_objective(objective_functions.L2_reg, gamma=1)
-            ef.min_volatility()
-            annual_return, annual_volatility, sharpe = ef.portfolio_performance(verbose=False)
-            weights = ef.clean_weights()
+            try:
+                mu = expected_returns.mean_historical_return(prices=current_portofolio)
+                S = risk_models.risk_matrix(prices=current_portofolio, method="ledoit_wolf")
+                ef = EfficientFrontier(mu, S, weight_bounds=[0.05, 1])
+                ef.add_objective(objective_functions.L2_reg, gamma=1)
+                ef.min_volatility()
+                annual_return, annual_volatility, sharpe = ef.portfolio_performance(verbose=False)
+                weights = ef.clean_weights()
+            except Exception as e:
+                print(e)
+                continue
 
-            if sharpe > 1:
+            if sharpe > 1 and sharpe < 5.5:
                 annual_return_best = annual_return
                 annual_volatility_best = annual_volatility
                 sharpe_best = sharpe
@@ -404,7 +408,7 @@ if __name__ == "__main__":
                 diff = (diff * best_portofolio_weights).sum(axis=1)
 
                 # cumsum
-                diff = (1 + diff).cumprod()
+                diff = (1 + diff).cumprod() - 1
                 diff.plot()
                 # red line at buy date
                 plt.axvline(x=buy_date, color="r", linestyle="--")
@@ -420,19 +424,8 @@ if __name__ == "__main__":
                     f.write(f'\nNumber of stocks to buy:\n{num_to_buy}')
                     f.write(f'\nEarned money:\n{earned_money}')
 
-        print(f"N = {len(earned_money_all)} Earned: μ={round(np.mean(earned_money_all))}, σ={round(np.std(earned_money_all))} total % increase: {round(np.mean(earned_money_all))} / cash * 100) (+- {round(np.std(earned_money_all) / cash * 100)}) % over {total_years} years")
+        print(f"N = {len(earned_money_all)} Earned: μ={round(np.mean(earned_money_all))}, σ={round(np.std(earned_money_all))} total % increase: {round(np.mean(earned_money_all))/ cash * 100}) (+- {round(np.std(earned_money_all) / cash * 100)}) % over {total_years} years")
         print(f"Number of success: {num_of_fail_and_success['success']}")
         print(f"Number of fail: {num_of_fail_and_success['fail']}")
         print(f"Biggest drawdown: {round(np.min(earned_money_all) / cash * 100)} %")
         print(f"Chance of success {num_of_fail_and_success['success'] / (num_of_fail_and_success['success'] + num_of_fail_and_success['fail']) * 100} %")
-
-
-
-        # Scatter plot earned money +- plot
-        plt.scatter(range(len(earned_money_all)), earned_money_all)
-        plt.title("Earned money")
-        plt.show()
-        # plot histogram
-        plt.hist(earned_money_all, bins=int(np.sqrt(len(earned_money_all))))
-        plt.title("Earned money")
-        plt.show()
