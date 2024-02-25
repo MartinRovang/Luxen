@@ -1,0 +1,249 @@
+
+TRATON	8TRA	SEK	DE000TRAT0N7	Industrials	5020	
+AAK	AAK	SEK	SE0011337708	Consumer Goods	4510	
+ABB Ltd	ABB	SEK	CH0012221716	Industrials	5020	
+Addtech B	ADDT B	SEK	SE0014781795	Industrials	5020	
+AFRY	AFRY	SEK	SE0005999836	Industrials	5010	
+Alfa Laval	ALFA	SEK	SE0000695876	Industrials	5020	
+AddLife B	ALIF B	SEK	SE0014401378	Health Care	2010	
+Autoliv SDB	ALIV SDB	SEK	SE0000382335	Consumer Services	4010	
+ALK-Abelló B	ALK B	DKK	DK0061802139	Health Care	2010	
+Alleima	ALLEI	SEK	SE0017615644	Basic Materials	5510	
+Alm. Brand	ALMB	DKK	DK0015250344	Financials	3030	
+Alvotech	ALVO	ISK	LU2458332611	Health Care	2010	
+Ambu	AMBU B	DKK	DK0060946788	Health Care	2010	
+Addnode Group B	ANOD B	SEK	SE0017885767	Technology	1010	
+Arion banki	ARION	ISK	IS0000028157	Financials	3010	
+Arion Banki SDB	ARION SDB	SEK	SE0010413567	Financials	3010	
+Arjo B	ARJO B	SEK	SE0010468116	Health Care	2010	
+ASSA ABLOY B	ASSA B	SEK	SE0007100581	Industrials	5010	
+Atlas Copco A	ATCO A	SEK	SE0017486889	Industrials	5020	
+Atlas Copco B	ATCO B	SEK	SE0017486897	Industrials	5020	
+Atrium Ljungberg B	ATRLJ B	SEK	SE0000191827	Real Estate	3510	
+Axfood	AXFO	SEK	SE0006993770	Consumer Goods	4520	
+Avanza Bank Holding	AZA	SEK	SE0012454072	Financials	3010	
+AstraZeneca	AZN	SEK	GB0009895292	Health Care	2010	
+Fast. Balder B	BALD B	SEK	SE0017832488	Real Estate	3510	
+Bavarian Nordic	BAVA	DKK	DK0015998017	Health Care	2010	
+Beijer Ref B	BEIJ B	SEK	SE0015949748	Industrials	5020	
+Better Collective	BETCO	SEK	DK0060952240	Technology	1010	
+Better Collective	BETCO DKK	DKK	DK0060952240	Technology	1010	
+Betsson B	BETS B	SEK	SE0020845014	Consumer Services	4050	
+Bilia A	BILI A	SEK	SE0009921588	Consumer Services	4040	
+Billerud	BILL	SEK	SE0000862997	Basic Materials	5510	
+BioArctic B	BIOA B	SEK	SE0010323311	Health Care	2010	
+Biotage	BIOT	SEK	SE0000454746	Health Care	2010	
+Boliden	BOL	SEK	SE0020050417	Basic Materials	5510	
+Bravida Holding	BRAV	SEK	SE0007491303	Industrials	5010	
+Brim	BRIM	ISK	IS0000000297	Consumer Goods	4510	
+Bure Equity	BURE	SEK	SE0000195810	Financials	3020	
+Camurus	CAMX	SEK	SE0007692850	Health Care	2010	
+Carlsberg A	CARL A	DKK	DK0010181676	Consumer Goods	4510	
+Carlsberg B	CARL B	DKK	DK0010181759	Consumer Goods	4510	
+Castellum	CAST	SEK	SE0000379190	Real Estate	3510	
+Catena	CATE	SEK	SE0001664707	Real Estate	3510	
+Cargotec Oyj	CGCBV	EUR	FI0009013429	Industrials	5020	
+ChemoMetec	CHEMM	DKK	DK0060055861	Health Care	2010	
+Coloplast B	COLO B	DKK	DK0060448595	Health Care	2010	
+Corem Property Group A	CORE A	SEK	SE0010714279	Real Estate	3510	
+Corem Property Group B	CORE B	SEK	SE0010714287	Real Estate	3510	
+Corem Property Group D	CORE D	SEK	SE0015961594	Real Estate	3510	
+Corem Property Group Pref	CORE PREF	SEK	SE0010714311	Real Estate	3510	
+Creades A	CRED A	SEK	SE0015661236	Financials	3020	
+Citycon Oyj	CTY1S	EUR	FI4000369947	Real Estate	3510	
+Danske Bank	DANSKE	DKK	DK0010274414	Financials	3010	
+Demant	DEMANT	DKK	DK0060738599	Health Care	2010	
+DFDS	DFDS	DKK	DK0060655629	Industrials	5020	
+Diös Fastigheter	DIOS	SEK	SE0001634262	Real Estate	3510	
+D/S Norden	DNORD	DKK	DK0060083210	Industrials	5020	
+Dometic Group	DOM	SEK	SE0007691613	Consumer Services	4020	
+DSV	DSV	DKK	DK0060079531	Industrials	5020	
+Elekta B	EKTA B	SEK	SE0000163628	Health Care	2010	
+Elisa Oyj	ELISA	EUR	FI0009007884	Telecommunications	1510	
+Electrolux A	ELUX A	SEK	SE0016589170	Consumer Services	4020	
+Electrolux B	ELUX B	SEK	SE0016589188	Consumer Services	4020	
+Embracer Group B	EMBRAC B	SEK	SE0016828511	Consumer Services	4020	
+Epiroc A	EPI A	SEK	SE0015658109	Industrials	5020	
+Epiroc B	EPI B	SEK	SE0015658117	Industrials	5020	
+Electrolux Professional B	EPRO B	SEK	SE0013747870	Industrials	5020	
+EQT	EQT	SEK	SE0012853455	Financials	3020	
+Ericsson A	ERIC A	SEK	SE0000108649	Telecommunications	1510	
+Ericsson B	ERIC B	SEK	SE0000108656	Telecommunications	1510	
+Essity A	ESSITY A	SEK	SE0009922156	Consumer Goods	4520	
+Essity B	ESSITY B	SEK	SE0009922164	Consumer Goods	4520	
+Evolution	EVO	SEK	SE0012673267	Consumer Services	4050	
+Fabege	FABG	SEK	SE0011166974	Real Estate	3510	
+FLSmidth & Co.	FLS	DKK	DK0010234467	Industrials	5010	
+Fortnox	FNOX	SEK	SE0017161243	Technology	1010	
+Fenix Outdoor International B	FOI B	SEK	CH0242214887	Consumer Services	4020	
+Fortum Oyj	FORTUM	EUR	FI0009007132	Utilities	6510	
+Fastpartner A	FPAR A	SEK	SE0013512506	Real Estate	3510	
+Fastpartner D	FPAR D	SEK	SE0013512514	Real Estate	3510	
+Fiskars Oyj Abp	FSKRS	EUR	FI0009000400	Consumer Services	4020	
+Getinge B	GETI B	SEK	SE0000202624	Health Care	2010	
+Genmab	GMAB	DKK	DK0010272202	Health Care	2010	
+GN Store Nord	GN	DKK	DK0010272632	Health Care	2010	
+Hemnet Group	HEM	SEK	SE0015671995	Real Estate	3510	
+Hexagon B	HEXA B	SEK	SE0015961909	Technology	1010	
+H. Lundbeck A	HLUN A	DKK	DK0061804697	Health Care	2010	
+H. Lundbeck B	HLUN B	DKK	DK0061804770	Health Care	2010	
+Hennes & Mauritz B	HM B	SEK	SE0000106270	Consumer Services	4040	
+HMS Networks	HMS	SEK	SE0009997018	Telecommunications	1510	
+Holmen A	HOLM A	SEK	SE0011090000	Basic Materials	5510	
+Holmen B	HOLM B	SEK	SE0011090018	Basic Materials	5510	
+HEXPOL B	HPOL B	SEK	SE0007074281	Basic Materials	5510	
+Hufvudstaden A	HUFV A	SEK	SE0000170375	Real Estate	3510	
+Huhtamäki Oyj	HUH1V	EUR	FI0009000459	Industrials	5020	
+Husqvarna A	HUSQ A	SEK	SE0001662222	Consumer Services	4020	
+Husqvarna B	HUSQ B	SEK	SE0001662230	Consumer Services	4020	
+Indutrade	INDT	SEK	SE0001515552	Industrials	5020	
+Industrivärden A	INDU A	SEK	SE0000190126	Financials	3020	
+Industrivärden C	INDU C	SEK	SE0000107203	Financials	3020	
+Instalco	INSTAL	SEK	SE0017483506	Industrials	5020	
+Intrum	INTRUM	SEK	SE0000936478	Financials	3020	
+Investor A	INVE A	SEK	SE0015811955	Financials	3020	
+Investor B	INVE B	SEK	SE0015811963	Financials	3020	
+International Petroleum Corp.	IPCO	SEK	CA46016U1084	Energy	6010	
+Íslandsbanki	ISB	ISK	IS0000028538	Financials	3010	
+ISS	ISS	DKK	DK0060542181	Industrials	5020	
+Jeudan	JDAN	DKK	DK0061282464	Real Estate	3510	
+JM	JM	SEK	SE0000806994	Real Estate	3510	
+Jyske Bank	JYSK	DKK	DK0010307958	Financials	3010	
+Københavns Lufthavne	KBHL	DKK	DK0010201102	Industrials	5020	
+Konecranes Oyj	KCR	EUR	FI0009005870	Industrials	5020	
+Kemira Oyj	KEMIRA	EUR	FI0009004824	Basic Materials	5520	
+Kesko Oyj A	KESKOA	EUR	FI0009007900	Consumer Goods	4520	
+Kesko Oyj B	KESKOB	EUR	FI0009000202	Consumer Goods	4520	
+Kindred Group	KIND SDB	SEK	SE0007871645	Consumer Services	4050	
+Kinnevik A	KINV A	SEK	SE0015810239	Financials	3020	
+Kinnevik B	KINV B	SEK	SE0015810247	Financials	3020	
+KONE Oyj	KNEBV	EUR	FI0009013403	Industrials	5020	
+Kojamo Oyj	KOJAMO	EUR	FI4000312251	Real Estate	3510	
+Lagercrantz Group B	LAGR B	SEK	SE0014990966	Technology	1010	
+Latour B	LATO B	SEK	SE0010100958	Financials	3020	
+Lindab International	LIAB	SEK	SE0001852419	Industrials	5010	
+Lifco B	LIFCO B	SEK	SE0015949201	Industrials	5020	
+Loomis	LOOMIS	SEK	SE0014504817	Industrials	5020	
+Lundin Gold	LUG	SEK	CA5503711080	Basic Materials	5510	
+Lundin Mining Corporation	LUMI	SEK	CA5503721063	Basic Materials	5510	
+Lundbergföretagen B	LUND B	SEK	SE0000108847	Financials	3020	
+A.P. Møller - Mærsk A	MAERSK A	DKK	DK0010244425	Industrials	5020	
+A.P. Møller - Mærsk B	MAERSK B	DKK	DK0010244508	Industrials	5020	
+Mandatum	MANTA	EUR	FI4000552526	Financials	3020	
+Marel	MAREL	ISK	IS0000000388	Industrials	5020	
+Medicover B	MCOV B	SEK	SE0009778848	Health Care	2010	
+Metsä Board Oyj A	METSA	EUR	FI0009000640	Basic Materials	5510	
+Metsä Board Oyj B	METSB	EUR	FI0009000665	Basic Materials	5510	
+Metso Oyj	METSO	EUR	FI0009014575	Industrials	5020	
+Mips	MIPS	SEK	SE0009216278	Consumer Services	4020	
+Modern Times Group A	MTG A	SEK	SE0018012486	Consumer Services	4030	
+Modern Times Group B	MTG B	SEK	SE0018012494	Consumer Services	4030	
+Munters Group	MTRS	SEK	SE0009806607	Industrials	5010	
+Mycronic	MYCR	SEK	SE0000375115	Technology	1010	
+NCAB Group	NCAB	SEK	SE0017160773	Technology	1010	
+NCC A	NCC A	SEK	SE0000118952	Industrials	5010	
+NCC B	NCC B	SEK	SE0000117970	Industrials	5010	
+Nordea Bank Abp	NDA DK	DKK	FI4000297767	Financials	3010	
+Nordea Bank Abp	NDA FI	EUR	FI4000297767	Financials	3010	
+Nordea Bank Abp	NDA SE	SEK	FI4000297767	Financials	3010	
+Neste Oyj	NESTE	EUR	FI0009013296	Energy	6010	
+Netcompany Group	NETC	DKK	DK0060952919	Technology	1010	
+New Wave B	NEWA B	SEK	SE0020356970	Consumer Services	4020	
+NIBE Industrier B	NIBE B	SEK	SE0015988019	Industrials	5010	
+NKT	NKT	DKK	DK0010287663	Industrials	5020	
+Noble Corporation	NOBLE	DKK	GB00BMXNWH07	Energy	6010	
+Nokia Oyj	NOKIA	EUR	FI0009000681	Telecommunications	1510	
+Nolato B	NOLA B	SEK	SE0015962477	Industrials	5020	
+Novo Nordisk B	NOVO B	DKK	DK0062498333	Health Care	2010	
+NP3 Fastigheter	NP3	SEK	SE0006342333	Real Estate	3510	
+NP3 Fastigheter Pref	NP3 PREF	SEK	SE0010820514	Real Estate	3510	
+Nyfosa	NYF	SEK	SE0011426428	Real Estate	3510	
+Novozymes B	NZYM B	DKK	DK0060336014	Health Care	2010	
+Orion Oyj A	ORNAV	EUR	FI0009014369	Health Care	2010	
+Orion Oyj B	ORNBV	EUR	FI0009014377	Health Care	2010	
+Ørsted	ORSTED	DKK	DK0060094928	Utilities	6510	
+Össur	OSSR	DKK	IS0000000040	Health Care	2010	
+Outokumpu Oyj	OUT1V	EUR	FI0009002422	Basic Materials	5510	
+OX2	OX2	SEK	SE0016075337	Energy	6010	
+Peab B	PEAB B	SEK	SE0000106205	Industrials	5010	
+Pandora	PNDORA	DKK	DK0060252690	Consumer Services	4020	
+Pandox B	PNDX B	SEK	SE0007100359	Real Estate	3510	
+Qt Group Oyj	QTCOM	EUR	FI4000198031	Technology	1010	
+Ratos A	RATO A	SEK	SE0000191090	Financials	3020	
+Ratos B	RATO B	SEK	SE0000111940	Financials	3020	
+Royal UNIBREW	RBREW	DKK	DK0060634707	Consumer Goods	4510	
+Revenio Group Oyj	REG1V	EUR	FI0009010912	Health Care	2010	
+Ringkjøbing Landbobank	RILBA	DKK	DK0060854669	Financials	3010	
+Rockwool A	ROCK A	DKK	DK0010219070	Industrials	5010	
+Rockwool B	ROCK B	DKK	DK0010219153	Industrials	5010	
+SAAB B	SAAB B	SEK	SE0000112385	Industrials	5020	
+Sagax A	SAGA A	SEK	SE0004635878	Real Estate	3510	
+Sagax B	SAGA B	SEK	SE0005127818	Real Estate	3510	
+Sagax D	SAGA D	SEK	SE0009161052	Real Estate	3510	
+Sampo Oyj A	SAMPO	EUR	FI4000552500	Financials	3030	
+Sampo Oyj SDB	SAMPO SDB	SEK	SE0018768707	Financials	3030	
+Sandvik	SAND	SEK	SE0000667891	Industrials	5020	
+Sanoma Oyj	SANOMA	EUR	FI0009007694	Consumer Services	4030	
+Nordnet	SAVE	SEK	SE0015192067	Financials	3020	
+Samhällsbyggnadsbo. i Norden B	SBB B	SEK	SE0009554454	Real Estate	3510	
+Samhällsbyggnadsbo. i Norden D	SBB D	SEK	SE0011844091	Real Estate	3510	
+SCA A	SCA A	SEK	SE0000171886	Basic Materials	5510	
+SCA B	SCA B	SEK	SE0000112724	Basic Materials	5510	
+Schouw & Co.	SCHO	DKK	DK0010253921	Industrials	5020	
+SEB A	SEB A	SEK	SE0000148884	Financials	3010	
+SEB C	SEB C	SEK	SE0000120784	Financials	3010	
+SECTRA B	SECT B	SEK	SE0020539310	Health Care	2010	
+Securitas B	SECU B	SEK	SE0000163594	Industrials	5020	
+Sv. Handelsbanken A	SHB A	SEK	SE0007100599	Financials	3010	
+Sv. Handelsbanken B	SHB B	SEK	SE0007100607	Financials	3010	
+Sinch	SINCH	SEK	SE0016101844	Technology	1010	
+Skanska B	SKA B	SEK	SE0000113250	Industrials	5010	
+SKF A	SKF A	SEK	SE0000108201	Basic Materials	5510	
+SKF B	SKF B	SEK	SE0000108227	Basic Materials	5510	
+Swedish Orphan Biovitrum	SOBI	SEK	SE0000872095	Health Care	2010	
+Spar Nord Bank	SPNO	DKK	DK0060036564	Financials	3010	
+SSAB A	SSAB A	SEK	SE0000171100	Basic Materials	5510	
+SSAB B	SSAB B	SEK	SE0000120669	Basic Materials	5510	
+SSAB A	SSABAH	EUR	SE0000171100	Basic Materials	5510	
+SSAB B	SSABBH	EUR	SE0000120669	Basic Materials	5510	
+Stora Enso A	STE A	SEK	FI0009007603	Basic Materials	5510	
+Stora Enso R	STE R	SEK	FI0009007611	Basic Materials	5510	
+Stora Enso Oyj A	STEAV	EUR	FI0009005953	Basic Materials	5510	
+Stora Enso Oyj R	STERV	EUR	FI0009005961	Basic Materials	5510	
+Scandinavian Tobacco Group	STG	DKK	DK0060696300	Consumer Goods	4510	
+Storskogen Group B	STOR B	SEK	SE0016797732	Financials	3020	
+Síldarvinnslan	SVN	ISK	IS0000000479	Consumer Goods	4510	
+SWECO A	SWEC A	SEK	SE0014960365	Industrials	5010	
+SWECO B	SWEC B	SEK	SE0014960373	Industrials	5010	
+Swedbank A	SWED A	SEK	SE0000242455	Financials	3010	
+Sydbank	SYDB	DKK	DK0010311471	Financials	3010	
+Systemair	SYSR	SEK	SE0016609499	Industrials	5010	
+Tele2 A	TEL2 A	SEK	SE0005190220	Telecommunications	1510	
+Tele2 B	TEL2 B	SEK	SE0005190238	Telecommunications	1510	
+Telia Company	TELIA	SEK	SE0000667925	Telecommunications	1510	
+Telia Company	TELIA1	EUR	SE0000667925	Telecommunications	1510	
+Thule Group	THULE	SEK	SE0006422390	Consumer Services	4020	
+TietoEVRY Oyj	TIETO	EUR	FI0009000277	Technology	1010	
+TietoEVRY Oyj	TIETOS	SEK	FI0009000277	Technology	1010	
+Millicom Int. Cellular SDB	TIGO SDB	SEK	SE0001174970	Telecommunications	1510	
+Topdanmark	TOP	DKK	DK0060477503	Financials	3030	
+Trelleborg B	TREL B	SEK	SE0000114837	Industrials	5020	
+TORM A	TRMD A	DKK	GB00BZ3CNK81	Industrials	5020	
+Troax Group	TROAX	SEK	SE0012729366	Basic Materials	5510	
+Truecaller B	TRUE B	SEK	SE0016787071	Technology	1010	
+Tryg	TRYG	DKK	DK0060636678	Financials	3030	
+Nokian Renkaat Oyj	TYRES	EUR	FI0009005318	Consumer Services	4010	
+UPM-Kymmene Oyj	UPM	EUR	FI0009005987	Basic Materials	5510	
+Uponor Oyj	UPONOR	EUR	FI0009002158	Industrials	5010	
+Vaisala Oyj A	VAIAS	EUR	FI0009900682	Industrials	5020	
+Valmet Oyj	VALMT	EUR	FI4000074984	Industrials	5020	
+Vitec Software Group B	VIT B	SEK	SE0007871363	Technology	1010	
+Vitrolife	VITR	SEK	SE0011205202	Health Care	2010	
+Volvo Car B	VOLCAR B	SEK	SE0016844831	Consumer Services	4010	
+Volvo A	VOLV A	SEK	SE0000115420	Industrials	5020	
+Volvo B	VOLV B	SEK	SE0000115446	Industrials	5020	
+Vestas Wind Systems	VWS	DKK	DK0061539921	Energy	6010	
+Wallenstam B	WALL B	SEK	SE0017780133	Real Estate	3510	
+Wihlborgs Fastigheter	WIHL	SEK	SE0018012635	Real Estate	3510	
+Wärtsilä Oyj Abp	WRT1V	EUR	FI0009003727	Industrials	5020	
+Zealand Pharma	ZEAL	DKK	DK0060257814	Health Care	2010	
