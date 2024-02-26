@@ -6,7 +6,7 @@ from pandas_datareader import data as pdr
 import yfinance as yfin
 from loguru import logger
 from typing import List, OrderedDict
-from pypfopt import expected_returns, risk_models, objective_functions, EfficientFrontier
+from pypfopt import expected_returns, risk_models, objective_functions, EfficientFrontier, black_litterman, BlackLittermanModel
 import matplotlib.pyplot as plt
 import mplcyberpunk
 import pkg_resources
@@ -105,7 +105,7 @@ class PriceFetcher:
             pandas.DataFrame: Dataframe with the data
             None: If there was an error
         """
-        save_spot = "C:/Users/Gimpe/Documents/github/Luxen/src/luxen/data/adj_close.csv"
+        save_spot = "/home/martin/Documents/github/Luxen/src/luxen/data/adj_close.csv"
         if pkg_resources.resource_exists("luxen", "data/adj_close.csv"):
             df = pandas.read_csv(save_spot)
             df.set_index("Date", inplace=True)
@@ -281,18 +281,19 @@ if __name__ == "__main__":
         fxn()
 
         cash = 50000
+        num_of_iterations = 50000
         N = 10
-        buy_date = pd.to_datetime('2020-01-01')
-        sample_for_real_portofolio: bool = False
+        buy_date = pd.to_datetime('2020-01-02')
+        sample_for_real_portofolio: bool = True
 
-        start_date = "2016-01-01"
+        start_date = "2020-01-01"
         end_date = "2024-01-25"
         years = pd.date_range(start=buy_date, end=end_date, freq="Y")
         total_years = len(years)
 
         pf = PriceFetcher(start_date=start_date, end_date=end_date)
-        file1 = "C:/Users/Gimpe/Documents/github/Luxen/src/luxen/data/Euronext_Equities_2024-02-25.csv"
-        file2 = "C:/Users/Gimpe/Documents/github/Luxen/src/luxen/data/scandi.txt"
+        file1 = "/home/martin/Documents/github/Luxen/src/luxen/data/Euronext_Equities_2024-02-25.csv"
+        file2 = "/home/martin/Documents/github/Luxen/src/luxen/data/scandi.txt"
         pf.use_tickers_from_file(file1, file2)
         all_stock = pf.fetch_all_adj_close()
 
@@ -342,7 +343,7 @@ if __name__ == "__main__":
         annual_return_best, annual_volatility_best, sharpe_best, best_portofolio_weights = 0, 0, 1, None
         earned_money_all = []
         num_of_fail_and_success = defaultdict(int)
-        for i in range(0, 50000):
+        for i in range(0, num_of_iterations):
             current_portofolio = all_stock.sample(n=N, replace=False, axis=1)
             current_portofolio_full = current_portofolio.dropna(axis=1, how="all")
             if not sample_for_real_portofolio:
@@ -361,26 +362,50 @@ if __name__ == "__main__":
                 continue
 
             try:
-                mu = expected_returns.mean_historical_return(prices=current_portofolio)
+                #mu = expected_returns.mean_historical_return(prices=current_portofolio)
                 S = risk_models.risk_matrix(prices=current_portofolio, method="ledoit_wolf")
+                #weights = ef.clean_weights()
+
+                # same price for all stocks
+                delta = black_litterman.market_implied_risk_aversion(current_portofolio)
+                if len(delta) < 10:
+                    continue
+                viewdict = {
+                    current_portofolio.columns[0]: delta[current_portofolio.columns[0]],
+                    current_portofolio.columns[1]: delta[current_portofolio.columns[1]],
+                    current_portofolio.columns[2]: delta[current_portofolio.columns[2]],
+                    current_portofolio.columns[3]: delta[current_portofolio.columns[3]],
+                    current_portofolio.columns[4]: delta[current_portofolio.columns[4]],
+                    current_portofolio.columns[5]: delta[current_portofolio.columns[5]],
+                    current_portofolio.columns[6]: delta[current_portofolio.columns[6]],
+                    current_portofolio.columns[7]: delta[current_portofolio.columns[7]],
+                    current_portofolio.columns[8]: delta[current_portofolio.columns[8]],
+                    current_portofolio.columns[9]: delta[current_portofolio.columns[9]],
+                }
+                bl = BlackLittermanModel(cov_matrix=S, absolute_views=viewdict)
+                mu = bl.bl_returns()
+                S = bl.bl_cov()
+                bl.bl_weights()
+                weights = bl.clean_weights()
+                bl.set_weights(weights)
+                #expected_returns, volatility, sharpe = bl.portfolio_performance(verbose=False)
+
                 ef = EfficientFrontier(mu, S, weight_bounds=[0.05, 1])
                 ef.add_objective(objective_functions.L2_reg, gamma=1)
                 ef.min_volatility()
-                annual_return, annual_volatility, sharpe = ef.portfolio_performance(verbose=False)
                 weights = ef.clean_weights()
+                expected_returns, volatility, sharpe = ef.portfolio_performance(verbose=False)
+
             except Exception as e:
                 print(e)
                 continue
 
-            if sharpe > 1 and sharpe < 5.5:
-                annual_return_best = annual_return
-                annual_volatility_best = annual_volatility
+            if sharpe > 1.5 and sharpe < 10.5:
+                annual_return_best = expected_returns
+                annual_volatility_best = volatility
                 sharpe_best = sharpe
                 best_portofolio_weights = weights
                 best_portofolio = current_portofolio
-
-                if len(best_portofolio_weights) < 10:
-                    continue
 
                 # ('STOCK.OL', WEIGHTs)
                 weights_dic = {k: v for k, v in weights.items()}
@@ -402,27 +427,27 @@ if __name__ == "__main__":
                     num_of_fail_and_success["fail"] += 1
                 earned_money_all.append(earned_money)
 
-                # plot the weighted portofolio time series
-                diff = current_portofolio_full.pct_change()
+                if i % 100 == 0:
+                    # plot the weighted portofolio time series
+                    diff = current_portofolio_full.pct_change()
 
-                diff = (diff * best_portofolio_weights).sum(axis=1)
+                    diff = (diff * best_portofolio_weights).sum(axis=1)
 
-                # cumsum
-                diff = (1 + diff).cumprod() - 1
-                diff.plot()
-                # red line at buy date
-                plt.axvline(x=buy_date, color="r", linestyle="--")
-                plt.title(f"sharp: {sharpe_best:.2f} | mean: {annual_return_best:.2%} | std: {annual_volatility_best:.2%}")
-                mplcyberpunk.add_glow_effects()
-                plt.savefig(f"./examples/weighted_portofolio_{sharpe_best}.png")
-                plt.close()
-
-                # save meta data as text file
-                with open(f"./examples/weighted_portofolio_{sharpe_best}.txt", "w") as f:
-                    f.write(f'Best portofolio:\n{best_portofolio_weights}\n')
-                    f.write(f'Annual return:\n {annual_return_best:.2%}, Annual volatility: {annual_volatility_best:.2%}, Sharpe Ratio: {sharpe_best:.2f}\n')
-                    f.write(f'\nNumber of stocks to buy:\n{num_to_buy}')
-                    f.write(f'\nEarned money:\n{earned_money}')
+                    # cumsum
+                    diff = (1 + diff).cumprod() - 1
+                    diff.plot()
+                    # red line at buy date
+                    plt.axvline(x=buy_date, color="r", linestyle="--")
+                    plt.title(f"sharp: {sharpe_best:.2f} | Expected return: {annual_return_best:.2%} | std: {annual_volatility_best:.2%}")
+                    mplcyberpunk.add_glow_effects()
+                    plt.savefig(f"./examples/weighted_portofolio_{sharpe_best}.png")
+                    plt.close()
+                    
+                    with open(f"./examples/weighted_portofolio_{sharpe_best}.txt", "w") as f:
+                        f.write(f'Best portofolio:\n{best_portofolio_weights}\n')
+                        f.write(f'Annual return:\n {annual_return_best:.2%}, Annual volatility: {annual_volatility_best:.2%}, Sharpe Ratio: {sharpe_best:.2f}\n')
+                        f.write(f'\nNumber of stocks to buy:\n{num_to_buy}')
+                        f.write(f'\nEarned money:\n{earned_money}')
 
         print(f"N = {len(earned_money_all)} Earned: μ={round(np.mean(earned_money_all))}, σ={round(np.std(earned_money_all))} total % increase: {round(np.mean(earned_money_all))/ cash * 100}) (+- {round(np.std(earned_money_all) / cash * 100)}) % over {total_years} years")
         print(f"Number of success: {num_of_fail_and_success['success']}")
